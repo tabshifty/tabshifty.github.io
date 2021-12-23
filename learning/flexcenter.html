@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+</head>
+<body>
+    <style>
+        div {
+            box-sizing: border-box;
+        }
+        .box {
+            display: flex;
+            background-color: burlywood;
+            width: 100%;
+            height: calc(100vw*.15);
+            max-height: 300px;
+            min-height: 100px;
+            justify-content: center;
+            align-items: center;
+        }
+        .box>.item {
+            width: 30%;
+            padding-bottom: 10%;
+            background-color: chocolate;
+        }
+    </style>
+    <div class="box">
+        <div class="item"></div>
+    </div>
+</body>
+</html>
