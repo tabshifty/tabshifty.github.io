@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Method</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
+    <!-- <script src="https://unpkg.com/vue@next"></script> -->
+    <!-- sha384-9n4biM8mFbjrht4f7M2gaTHr1BuRH8v0bPVrRF57Wu6WhFWKmsV0BMIwX8J/tBKy -->
+</head>
+<body>
+    <ul class="method-list">
+        <li class="method">
+            <button class="btn-show">>>></button>
+            <em class="method-name">concat</em>
+            <div class="code-block">
+                <pre>
+                    <code>
+                        let arr1 = [1, 2, 3];
+                        let arr2 = [4, 5];      // 测试
+                    </code>
+                </pre>
+                <div class="console-panlel"></div>
+            </div>
+        </li>
+    </ul>
+    <script>
+        let ul = document.querySelector('ul'); 
+        ul.addEventListener('click', function(evt) {
+            if (evt.target.className == "btn-show") {
+                const btn = evt.target;
+                const code = btn.parentNode.querySelector(".code-block")
+                if (btn.show != "show") {
+                    btn.show = "show";
+                    code.style.display = "block";
+                } else {
+                    btn.show = "off";
+                    code.style.display = "none";
+                }
+            }
+        })
+        hljs.highlightAll();
+
+    </script>
+</body>
+</html>

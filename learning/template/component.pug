@@ -1,0 +1,10 @@
+ul 
+    each val in methods 
+        li 
+            button >>>
+            .method-description
+                em.mentod-name= val.mentod
+                = val.description
+            .code-block
+                pre 
+                    code= val.code 
