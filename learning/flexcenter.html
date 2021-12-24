@@ -4,9 +4,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flex</title>
-</head>
-<body>
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
         div {
             box-sizing: border-box;
         }
@@ -15,19 +17,30 @@
             background-color: burlywood;
             width: 100%;
             height: calc(100vw*.15);
-            max-height: 300px;
-            min-height: 100px;
+            height: 200px;
             justify-content: center;
             align-items: center;
         }
         .box>.item {
-            width: 30%;
-            padding-bottom: 10%;
+            width: 100px;
+            height: 50%;
             background-color: chocolate;
         }
     </style>
-    <div class="box">
-        <div class="item"></div>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="item"></div>
+        </div>
     </div>
+    <script type="text/javascript">
+        var ctn = document.querySelector('.container')
+        window.onload = function() {
+            var height = ctn.offsetHeight;
+            console.log(top)
+            top.postMessage({height: height},'*')
+        }
+    </script>
 </body>
 </html>
