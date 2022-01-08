@@ -98,7 +98,7 @@ div.nav-wrapper {
 div.logo {
     width: 75px;
     height: 23px;
-    background-image: url(./demos/raw/assets/logo.svg);
+    background-image: url(./assets/logo.svg);
     /* justify-self: flex-start; */
 }
 
@@ -148,7 +148,7 @@ section.main-heading {
 .swiper-item {
     display: flex;
     height: 468px;
-    background: url(./demos/raw/assets/hero-01.jpg) top right/cover;
+    background: url(./assets/hero-01.jpg) top right/cover;
     overflow: hidden;
 }
 
@@ -400,24 +400,24 @@ a.icon {
 }
 
 a.instagram {
-    background-image: url('./demos/raw/assets/instagram.svg');
+    background-image: url('./assets/instagram.svg');
 }
 
 a.linkedin {
-    background-image: url(./demos/raw/assets/linkedin.svg);
+    background-image: url(./assets/linkedin.svg);
 }
 
 a.facebook {
     width: 11px;
     height: 21px;
     margin: 0 6px;
-    background-image: url(./demos/raw/assets/facebook.svg);
+    background-image: url(./assets/facebook.svg);
 }
 
 a.twitter {
     width: 21px;
     height: 17px;
-    background-image: url(./demos/raw/assets/twitter.svg);
+    background-image: url(./assets/twitter.svg);
 }
 
 div.split-line {
@@ -816,10 +816,8 @@ p.placeholder {
     }
 }
 
-@media screen and (-moz-min-device-pixel-ratio: 2), 
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 2dppx) {
+@media screen and (-moz-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .swiper-item {
-    background: url(./demos/raw/assets/hero-01_2x.jpg) top right/cover;
+    background: url(./assets/hero-01_2x.jpg) top right/cover;
   }
 }
